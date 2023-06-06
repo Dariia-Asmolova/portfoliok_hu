@@ -1,0 +1,135 @@
+@use "variables" as *;
+
+.header {
+  background-color: $brownLight;
+  padding-bottom: 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+
+    @media screen and (max-width: $tablet) {
+      height: 60px;
+      position: fixed;
+      top: 0;
+      z-index: 2;
+      background-color: $brownLight;
+    }
+  }
+
+ 
+
+  &__nav {
+    position: relative;
+
+    @media screen and (max-width: $tablet) {
+      left: 20%;
+    }
+
+    .nav__list {
+      display: flex;
+      flex-direction: row;
+
+      @media screen and (max-width: $tablet) {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($black, 0.9);
+        z-index: 2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &.active {
+          display: flex;
+        }
+      }
+    }
+
+    .nav__item {
+      padding: 30px 5px;
+      color: $black;
+      min-width: 120px;
+      text-align: center;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        background-color: $tomatoLight;
+      }
+    }
+
+    .nav__link {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: $black;
+      padding: 10px;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        color: $brownLight;
+      }
+
+      @media screen and (max-width: $tablet) {
+        font-size: 30px;
+        color: $white;
+        padding: 15px 0;
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+
+    @media screen and (max-width: $tablet) {
+      gap: 20px;
+    }
+
+    .icons__link {
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.burger {
+  display: none;
+  height: 40px;
+  width: 40px;
+  flex-direction: column;
+  z-index: 3;
+  position: relative;
+  .bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: $black;
+    transition: transform 0.2s ease-in;
+  }
+  &.active .bar:nth-child(1) {
+    transform: translateY(14px) rotate(45deg);
+  }
+  &.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  &.active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    cursor: pointer;
+  }
+}

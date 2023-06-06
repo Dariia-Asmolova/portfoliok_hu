@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+.catalog {
+  background: $brownLight;
+  padding-bottom: 60px;
+  position: relative;
+
+  &__container {
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @media screen and (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 20vw);
+
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 50vw);
+    }
+  }
+
+  &__text {
+    max-width: 500px;
+    margin-bottom: 15px;
+    margin-left: 8px;
+    color: $black;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .list__item {
+    width: 35%;
+    max-height: 45%;
+    margin: 10px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 361px;
+    margin-bottom: 25px;
+    height: 700px;
+    transition: all 0.3s ease-in-out;
+  }
+}

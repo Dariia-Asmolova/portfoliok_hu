@@ -1,0 +1,48 @@
+@use "variables" as *;
+
+.news {
+  background: $brownLight;
+  padding-bottom: 50px;
+
+  &__container {
+    padding-top: 50px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .block {
+    height: 350px;
+    width: 400px;
+    border: 3px solid rgb(147, 179, 239);
+    border-radius: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+
+    &__text {
+      min-width: 370px;
+      margin-bottom: 15px;
+      margin-left: 8px;
+      color: $black;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 30px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    @media screen and (max-width: $tablet) {
+    }
+  }
+}
