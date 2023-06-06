@@ -16,6 +16,10 @@
     @media screen and (max-width: $tablet) {
       flex-wrap: wrap;
     }
+
+     @media screen and (max-width: $desktop) {
+      flex-wrap: wrap;
+    }
   }
 
   .block {

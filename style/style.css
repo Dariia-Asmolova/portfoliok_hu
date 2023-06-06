@@ -278,6 +278,11 @@ img {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 1320px) {
+  .news .content {
+    flex-wrap: wrap;
+  }
+}
 .news .block {
   height: 350px;
   width: 400px;
