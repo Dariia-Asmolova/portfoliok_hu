@@ -280,6 +280,16 @@ img {
 .news .block__img {
   padding-left: 300px;
 }
+@media screen and (max-width: 767px) {
+  .news .block__img {
+    z-index: -3;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .news .block__img {
+    z-index: -3;
+  }
+}
 .news .block .img_01 {
   padding-left: 310px;
 }

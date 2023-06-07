@@ -20,6 +20,13 @@
 
     &__img {
       padding-left: 300px;
+      @media screen and (max-width: $tablet) {
+        z-index: -3;
+      }
+  
+      @media screen and (max-width: $desktop) {
+        z-index: -3;
+      }
     }
 
     .img_01 {
