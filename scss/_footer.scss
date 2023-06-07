@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 .footer {
-  background: $brownDark;
+  background: $brownLight;
 
   &__container {
     padding-top: 50px;
@@ -15,27 +15,42 @@
 
   &__contacts {
     padding-right: 15px;
-    color: $brownLight;
+    color: black;
     margin: 10px;
   }
 
-  .contacts__title {
-    font-family: "Montserrat";
+  &__phone {
+    padding-top: 30px;
+  }
+
+  .contacts__text {
+    font-family: "Open Sans";
     font-style: normal;
-    font-weight: 500;
     font-size: 26px;
     line-height: 32px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    color: black;
+  }
+
+  .contacts__title {
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 20px;
+    color: black;
   }
 
   .socials {
     display: flex;
     gap: 20px;
     padding-bottom: 10px;
+    color: black;
   }
 
   &__phone {
-    color: $brownLight;
+    color: black;
     font-size: 26px;
     line-height: 32px;
   }
