@@ -46,6 +46,16 @@ img {
   }
 }
 
+.pk__title {
+  margin: 15px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.pk__text {
+  font-size: 18px;
+}
+
 .header {
   background-color: #e7f1f6;
   padding-bottom: 50px;
@@ -374,5 +384,15 @@ img {
     width: 200px;
     height: 200px;
   }
+}
+
+.pk {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.pk a:hover {
+  color: chocolate;
 }
 /*# sourceMappingURL=style.css.map */

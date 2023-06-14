@@ -62,3 +62,14 @@
     height: 200px;
   }
 }
+
+.pk {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+
+  a:hover {
+    color: chocolate;
+  }
+}
